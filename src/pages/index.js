@@ -15,12 +15,12 @@ export default function Home() {
     <main className='flex items-center text-dark w-full min-h-full'>
       <Layout>
         <div className='flex items-center justify-between w-full'>
-          <div className='w-1/2'>
+          <div className='w-[100%]'>
             <Image src={ProfileBig} alt="Big Wasan" className='w-full h-auto' />
           </div>
           <div className='1/2 flex flex-col items-start self-center '>
 
-            <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl' />
+            <AnimatedText text="Turning Vision Into Reality With Code And Design." className='text-6xl' />
 
             <p className='my-4 text-base font-medium'>
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
