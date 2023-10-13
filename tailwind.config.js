@@ -12,11 +12,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      colors:{
+      colors: {
         dark: '#1b1b1b',
         light: '#f5f5f5',
         primary: '#863E96',
         primaryDark: '#58E6D9'
+      },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
       }
     },
   },

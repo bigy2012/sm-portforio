@@ -6,6 +6,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import Footter from '@/components/Footter'
+import HireMe from '@/components/HireMe'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,9 +21,9 @@ export default function Home() {
           </div>
           <div className='1/2 flex flex-col items-start self-center '>
 
-            <AnimatedText text="Turning Vision Into Reality With Code And Design." className='text-6xl' />
+            <AnimatedText text="Big Wasan" className='text-6xl' />
 
-            <p className='my-4 text-base font-medium'>
+            <p className='my-6 text-base font-medium'>
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
               Explore my latest projects and articles, showcasing my expertise in React.js and web development.
             </p>
@@ -46,6 +47,7 @@ export default function Home() {
           </div>
         </div>
       </Layout>
+        <HireMe />
     </main>
   )
 }
