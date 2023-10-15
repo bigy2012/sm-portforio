@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className='flex items-center text-dark w-full min-h-full'>
+    <main className='flex items-center text-dark w-full min-h-full dark:text-light'>
       <Layout>
         <div className='flex items-center justify-between w-full'>
           <div className='w-[100%]'>
@@ -31,14 +31,17 @@ export default function Home() {
 
               <Link href="/dummy.pdf" target={"_blank"}
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg font-semibold
-              hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark'
+              hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
+              dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
+              hover:dark:border-light
+              '
                 download={true}
               >Resume
                 <LinkArrow />
               </Link>
 
               <Link href="mailto:wasaniy121@gmail.com" target={"_blank"}
-                className='ml-4 text-lg font-medium capitalize text-dark underline'
+                className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'
               >
                 Contact
               </Link>
@@ -47,7 +50,7 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-        <HireMe />
+      <HireMe />
     </main>
   )
 }

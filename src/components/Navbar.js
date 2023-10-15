@@ -4,6 +4,7 @@ import Logo from './Logo'
 import { useRouter } from 'next/router'
 import { GithubIcon, MoonIcon, SunIcon, FaceBook } from './Icons'
 import { motion } from 'framer-motion'
+import useThemeSwitcher from './hook/useThemeSwitcher'
 
 
 const CustomLink = ({ href, title, className = '' }) => {
@@ -16,14 +17,20 @@ const CustomLink = ({ href, title, className = '' }) => {
             h-[1px] inline-block  bg-dark absolute left-0 -bottom-0.5 group-hover:w-full 
             transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full' : 'w-0'}
+            dark:bg-light
             `}>&nbsp;</span>
         </Link>
     )
 }
 
 const Navbar = () => {
+
+    const [mode, setMode] = useThemeSwitcher();
+
     return (
-        <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
+        <header className='w-full px-32 py-8 font-medium flex items-center justify-between first-letter:
+        dark:text-light
+        '>
             <nav>
                 <CustomLink href="/" title="Home" className='mr-4' />
                 <CustomLink href="/about" title="About" className='mx-4' />
@@ -48,22 +55,20 @@ const Navbar = () => {
                 >
                     <FaceBook />
                 </motion.a>
-                <motion.a href="/" target={"_blank"}
-                    whileHover={{ y: -4 }}
-                    whileTap={{ scale: 0.9 }}
 
-                    className='w-8 mr-3'
+                <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                    className={`rounded-full p-1 w-[35px] ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                 >
-                    <MoonIcon />
-                </motion.a>
-                <motion.a href="/" target={"_blank"}
-                    whileHover={{ y: -4 }}
-                    whileTap={{ scale: 0.9 }}
+                    {
+                        mode === "dark" ?
+                            <SunIcon className={"fill-dark"} />
+                            :
+                            <MoonIcon className={"fill-dark"} />
 
-                    className='w-8 mr-3'
-                >
-                    <SunIcon />
-                </motion.a>
+                    }
+                </button>
+
+
             </nav>
         </header>
     )

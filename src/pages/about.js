@@ -41,9 +41,9 @@ const about = () => {
         <div className='flex w-full flex-col items-center justify-center'>
             <Layout className='pt-16'>
                 <AnimatedText text="Passion Fuels Purpose!" className='mb-16' />
-                <div className='grid w-full grid-cols-8 gap-16'>
+                <div className='grid w-full grid-cols-8 gap-16 dark:text-light'>
                     <div className='col-span-3 flex flex-col items-start justify-start'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Big Wasan</h2>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Big Wasan</h2>
                         <p className='my-4 font-medium'>
                             Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
                             and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
@@ -70,26 +70,26 @@ const about = () => {
                             <span className='inline-block text-7xl font-bold'>
                                 <AnimateNumbers value={50} />+
                             </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Expreiane 01</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>Expreiane 01</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
                                 <AnimateNumbers value={40} />+
                             </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Expreiane 01</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>Expreiane 01</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
                                 <AnimateNumbers value={2} />+
                             </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Expreiane 01</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>Expreiane 01</h2>
                         </div>
                     </div>
                 </div>
 
-                <Skills/>
-                <Experience/>
-                <Education/>
+                <Skills />
+                <Experience />
+                <Education />
 
             </Layout>
         </div>

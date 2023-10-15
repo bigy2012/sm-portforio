@@ -34,12 +34,12 @@ const Education = () => {
     });
 
     return (
-        <div>
+        <div className='dark:text-light'>
             <h2 className='font-bold text-8xl w-full text-center mt-10'>Education</h2>
 
             <div ref={ref} className='w-[75%] mx-auto my-20 relative'>
 
-                <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-14 top-0 w-[4px] h-full bg-dark origin-top" />
+                <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-14 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top" />
 
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Detail
