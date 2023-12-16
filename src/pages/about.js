@@ -40,13 +40,12 @@ const about = () => {
     return (
         <div className='flex w-full flex-col items-center justify-center'>
             <Layout className='pt-16'>
-                <AnimatedText text="Passion Fuels Purpose!" className='mb-16' />
+                <AnimatedText text="Passion Big Wasan!" className='mb-16' />
                 <div className='grid w-full grid-cols-8 gap-16 dark:text-light'>
                     <div className='col-span-3 flex flex-col items-start justify-start'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Big Wasan</h2>
                         <p className='my-4 font-medium'>
-                            Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
-                            and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
+                            Hi, I'm Big, a web Fullstack developer With 2 years of experience in the field. I am always looking for
                             new and innovative ways to bring my clients' visions to life.
                         </p>
                         <p className='my-4 font-medium'>
@@ -54,9 +53,7 @@ const about = () => {
                             creating intuitive, enjoyable experiences for users.
                         </p>
                         <p className='my-4 font-medium'>
-                            Whether I'm working on a website, mobile app, or
-                            other digital product, I bring my commitment to design excellence and user-centered thinking to
-                            every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                            Whether I'm working on a website, mobile app. every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
                         </p>
                     </div>
 
@@ -66,18 +63,7 @@ const about = () => {
                     </div>
 
                     <div className='col-span-2 flex flex-col items-end justify-between'>
-                        <div className='flex flex-col items-end justify-center'>
-                            <span className='inline-block text-7xl font-bold'>
-                                <AnimateNumbers value={50} />+
-                            </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>Expreiane 01</h2>
-                        </div>
-                        <div className='flex flex-col items-end justify-center'>
-                            <span className='inline-block text-7xl font-bold'>
-                                <AnimateNumbers value={40} />+
-                            </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>Expreiane 01</h2>
-                        </div>
+
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
                                 <AnimateNumbers value={2} />+
@@ -87,7 +73,7 @@ const about = () => {
                     </div>
                 </div>
 
-                <Skills />
+                {/* <Skills /> */}
                 <Experience />
                 <Education />
 

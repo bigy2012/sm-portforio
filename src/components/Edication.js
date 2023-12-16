@@ -14,7 +14,7 @@ const Detail = ({ type, time, place, info }) => {
             <h3 className="capitalize font-bold text-2xl">
                 {type}
             </h3>
-            <span className="capitalize font-medium text-dark/75">
+            <span className="capitalize font-medium text-dark/75 dark:text-white">
                 {time} | {place}
             </span>
             <p className="font-medium w-full">
@@ -43,23 +43,9 @@ const Education = () => {
 
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Detail
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-                    />
-                    <Detail
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-                    />
-                    <Detail
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
+                        type="Vocational Certificate in Information Technology."
+                        time="2019-2022"
+                        place="Nawamintrachini Mukdahan Vocational Education College"
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                         Intelligence."
                     />

@@ -70,7 +70,7 @@ const Navbar = () => {
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/about" title="About" className='mx-4' />
-                    <CustomLink href="/projects" title="Projects" className='ml-4' />
+                    {/* <CustomLink href="/projects" title="Projects" className='ml-4' /> */}
                 </nav>
             </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
                         <nav className='flex items-center flex-col justify-center'>
                             <CustomMobileLink href="/" title="Home" className='mr-4' toggle={handleClick} />
                             <CustomMobileLink href="/about" title="About" className='mx-4' toggle={handleClick} />
-                            <CustomMobileLink href="/projects" title="Projects" className='ml-4' toggle={handleClick} />
+                            {/* <CustomMobileLink href="/projects" title="Projects" className='ml-4' toggle={handleClick} /> */}
                         </nav>
                     </div>
                     : null

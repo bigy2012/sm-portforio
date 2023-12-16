@@ -25,11 +25,11 @@ export default function Home() {
 
             <p className='my-6 text-base font-medium'>
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-              Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              Explore my latest projects and articles, showcasing my expertise in node js and web development.
             </p>
             <div className='flex items-center self-start mt-2'>
 
-              <Link href="/dummy.pdf" target={"_blank"}
+              <Link href="/wasan CV resume.pdf" target={"_blank"}
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg font-semibold
               hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
               dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light

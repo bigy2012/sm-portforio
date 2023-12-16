@@ -15,7 +15,7 @@ const Detail = ({ position, company, companyLink, time, address, work }) => {
                 target="_blank"
                 className="text-primary"
             >@{company}</a></h3>
-            <span className="capitalize font-medium text-dark/75">
+            <span className="capitalize font-medium text-dark/75 dark:text-white">
                 {time} | {address}
             </span>
             <p className="font-medium w-full">
@@ -44,44 +44,20 @@ const Experience = () => {
 
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Detail
-                        position="Software Engineer"
-                        companyLink="www.google.com"
-                        company="Google"
+                        position="Full stack developer"
+                        companyLink="https://ideva.co/"
+                        company="ideva development"
                         time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's
-                    search engine, including improving the accuracy and relevance of search results and
-                    developing new tools for data analysis and visualization."
+                        address=""
+                        work="I am a Fullstack Developer with expertise in custom programming. My expertise lies in writing code that seamlessly connects to databases. Ensuring that the system works reliably and efficiently, I am also responsible for testing all systems to verify end-to-end flow and ensure that the overall program runs as required with maximum efficiency."
                     />
                     <Detail
-                        position="Software Engineer"
-                        companyLink="www.google.com"
-                        company="Google"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's
-                    search engine, including improving the accuracy and relevance of search results and
-                    developing new tools for data analysis and visualization."
-                    />
-                    <Detail
-                        position="Software Engineer"
-                        companyLink="www.google.com"
-                        company="Google"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's
-                    search engine, including improving the accuracy and relevance of search results and
-                    developing new tools for data analysis and visualization."
-                    />
-                    <Detail
-                        position="Software Engineer"
-                        companyLink="www.google.com"
-                        company="Google"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's
-                    search engine, including improving the accuracy and relevance of search results and
-                    developing new tools for data analysis and visualization."
+                        position="Freelance"
+                        companyLink="/"
+                        company="Freelance"
+                        time="2021-Present"
+                        address=""
+                        work="I am a freelance specializing in website development, bot programming, and other programming tasks."
                     />
                 </ul>
             </div>
